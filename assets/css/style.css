@@ -1,0 +1,111 @@
+h1, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Baloo";
+}
+
+body {
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+  z-index: 1;
+}
+
+.title {
+  margin-top: 20px;
+  color: #ccc;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+
+.field-block {
+  width: 120px;
+  height: 120px;
+  outline: 1px solid rgba(255,255,255,0.2);
+}
+
+.x {
+  background-image: url("../img/x1.png");
+  background-size: 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.circle {
+  background-image: url("../img/circle2.png");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.xchecked{
+  position: relative;
+}
+
+.xchecked:after{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 5px;
+  background: rgba(255,255,255,0.5);
+  content: "";
+  width: 100%;
+}
+
+.ychecked{
+  position: relative;
+}
+
+.ychecked:after{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 5px;
+  background: rgba(255,255,255,0.5);
+  content: "";
+  height: 100%;
+}
+
+.diagchecked1{
+  position: relative;
+}
+
+.diagchecked1:after{
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  height: 5px;
+  background: rgba(255,255,255,0.5);
+  content: "";
+  width: 140%;
+  transform: rotate(45deg);
+}
+
+.diagchecked2{
+  position: relative;
+}
+
+.diagchecked2:after{
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  height: 5px;
+  background: rgba(255,255,255,0.5);
+  content: "";
+  width: 140%;
+  transform: rotate(-45deg);
+}
