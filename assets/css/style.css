@@ -24,7 +24,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   z-index: 1;
 }
 
-.title {
+.title, .result, .newgame {
   margin-top: 20px;
   color: #ccc;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -108,4 +108,12 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   content: "";
   width: 140%;
   transform: rotate(-45deg);
+}
+
+.result {
+  transition: ease 1s;
+}
+
+.blink {
+  color: red;
 }
